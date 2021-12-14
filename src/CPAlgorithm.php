@@ -1,11 +1,7 @@
 <?php
 
 /**
- * Объект Algorithm
  * Описывает алгоритм шифрования.
- * Реализует интерфейс, аналогичный интерфейсу объекта CAPICOM.Algorithm.
- * В отличие от объекта Microsoft CAPICOM.Algorithm, свойство Name данного объекта доступно только для чтения.
- * Объект данного класса нельзя создать. Данный объект возвращает свойство Algorithm объекта CPEnvelopedData.
  *
  * @link https://docs.cryptopro.ru/cades/reference/cadescom/cadescom_class/algorithm
  * @link https://docs.microsoft.com/en-gb/windows/win32/seccrypto/algorithm?redirectedfrom=MSDN
