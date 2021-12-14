@@ -1,0 +1,1 @@
+# Подсказки php_CPCSP (libphpcades, КриптоПРО) для IDE
