@@ -1,0 +1,36 @@
+{
+	"name": "webmasterskaya/crypto-pro-php-stubs",
+	"type": "library",
+	"description": "Самая полная библиотека подсказок IDE libphpcades (КриптоПро), которая обеспечивает автозаполнение в современных IDE.",
+	"keywords": [
+		"КриптоПро",
+		"CryptoPro",
+		"DevTools",
+		"IDE",
+		"Stubs",
+		"Stub",
+		"PhpStorm",
+		"Netbeans",
+		"Eclipse",
+		"autocomplete"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Artem Vasilev",
+			"email": "kern.usr@gmail.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/webmasterskaya/crypto-pro-php-stubs/issues",
+		"source": "https://github.com/webmasterskaya/crypto-pro-php-stubs"
+	},
+	"require": {
+		"php": ">=7"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"\\": "src/"
+		}
+	}
+}
