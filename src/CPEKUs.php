@@ -2,17 +2,25 @@
 
 class CPEKUs
 {
-	
+
 	public function __construct(){}
-	
+
 	public function Add(){}
-	
+
+	/**
+	 * @return int
+	 */
 	public function get_Count(){}
-	
-	public function get_Item(){}
-	
+
+	/**
+	 * @param   int  $index
+	 *
+	 * @return \CPEKU
+	 */
+	public function get_Item(int $index){}
+
 	public function Clear(){}
-	
+
 	public function Remove(){}
-	
+
 }
