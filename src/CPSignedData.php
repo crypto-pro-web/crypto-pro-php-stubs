@@ -94,7 +94,7 @@ class CPSignedData
 	 *                                    </tbody>
 	 *                                    </table>
 	 *
-	 * @return void
+	 * @return string|void
 	 */
 	public function SignCades(\CPSigner $Signer, $CadesType = CADES_DEFAULT, bool $bDetached = false, $EncodingType = ENCODE_BASE64)
 	{
@@ -178,7 +178,7 @@ class CPSignedData
 	 *                                        </tbody>
 	 *                                        </table>
 	 *
-	 * @return void
+	 * @return string|void
 	 */
 	public function SignHash(\CPHashedData $Hash, \CPSigner $Signer, $CadesType = CADES_DEFAULT, $EncodingType = ENCODE_BASE64)
 	{
@@ -261,7 +261,7 @@ class CPSignedData
 	 *                                       </tbody>
 	 *                                       </table>
 	 *
-	 * @return void
+	 * @return string|void
 	 */
 	public function CoSignCades(\CPSigner $Signer, $CadesType = CADES_DEFAULT, $EncodingType = ENCODE_BASE64)
 	{
@@ -345,7 +345,7 @@ class CPSignedData
 	 *                                        </tbody>
 	 *                                        </table>
 	 *
-	 * @return void
+	 * @return string|void
 	 */
 	public function CoSignHash(\CPHashedData $Hash, \CPSigner $Signer, $CadesType = CADES_DEFAULT, $EncodingType = ENCODE_BASE64)
 	{
@@ -549,39 +549,33 @@ class CPSignedData
 	/**
 	 * Устанавливает способ кодирования данных для подписи.
 	 *
-	 * @param   mixed  $EncodingType         Кодировка возвращаемой подписи. По умолчанию ENCODE_BASE64.
-	 *                                       Может принимать следующие значения:
-	 *                                       <table>
-	 *                                       <thead>
-	 *                                       <tr>
-	 *                                       <th>Имя</th>
-	 *                                       <th>Описание</th>
-	 *                                       <th>Значение</th>
-	 *                                       </tr>
-	 *                                       </thead>
-	 *                                       <tbody>
-	 *                                       <tr>
-	 *                                       <td><strong>ENCODE_ANY</strong></td>
-	 *                                       <td>Данные сохраняются в виде строки в кодировке Base64 или чистой двоичной последовательности. Этот тип кодирования используется
-	 *                                       только для входных данных с неизвестным типом кодирования. Представлен в CAPICOM 2.0.<br></td>
-	 *                                       <td>0xffffffff</td>
-	 *                                       </tr>
-	 *                                       <tr>
-	 *                                       <td><strong>ENCODE_BASE64</strong></td>
-	 *                                       <td>Данные сохраняются в виде строки в кодировке Base64.<br></td>
-	 *                                       <td>0</td>
-	 *                                       </tr>
-	 *                                       <tr>
-	 *                                       <td><strong>ENCODE_BINARY</strong></td>
-	 *                                       <td>Данные сохраняются в виде чистой двоичной последовательности.<br></td>
-	 *                                       <td>1</td>
-	 *                                       </tr>
-	 *                                       </tbody>
-	 *                                       </table>
+	 * @param   mixed  $ContentEncoding         Способ кодирования данных для подписи. По умолчанию STRING_TO_UCS2LE.
+	 *                                          Может принимать следующие значения:
+	 *                                          <table>
+	 *                                          <thead>
+	 *                                          <tr>
+	 *                                          <th>Имя</th>
+	 *                                          <th>Описание</th>
+	 *                                          <th>Значение</th>
+	 *                                          </tr>
+	 *                                          </thead>
+	 *                                          <tbody>
+	 *                                          <tr>
+	 *                                          <td><strong>STRING_TO_UCS2LE</strong></td>
+	 *                                          <td>Кодировка UTF-8 или UNICODE.<br></td>
+	 *                                          <td>0</td>
+	 *                                          </tr>
+	 *                                          <tr>
+	 *                                          <td><strong>BASE64_TO_BINARY</strong></td>
+	 *                                          <td>Кодировка BASE64.</td>
+	 *                                          <td>1</td>
+	 *                                          </tr>
+	 *                                          </tbody>
+	 *                                          </table>
 	 *
 	 * @return void
 	 */
-	public function set_ContentEncoding($EncodingType)
+	public function set_ContentEncoding($ContentEncoding = STRING_TO_UCS2LE)
 	{
 	}
 
