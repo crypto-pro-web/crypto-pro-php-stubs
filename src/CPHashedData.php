@@ -9,10 +9,10 @@
  * @link https://docs.cryptopro.ru/cades/reference/cadescom/cadescom_interface/icphasheddata2
  * @link https://learn.microsoft.com/windows/win32/seccrypto/hasheddata
  *
- * @param-read $Algorithm
- * @param-read $Value
- * @param-read $DataEncoding
- * @param-read $Key
+ * @property-read  $Algorithm
+ * @property-read  $Value
+ * @property-read  $DataEncoding
+ * @property-read  $Key
  */
 class CPHashedData
 {
