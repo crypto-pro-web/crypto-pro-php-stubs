@@ -52,4 +52,57 @@ namespace PHPSTORM_META {
 		| CERT_INFO_SUBJECT_UPN | CERT_INFO_ISSUER_UPN
 		| CERT_INFO_SUBJECT_DNS_NAME | CERT_INFO_ISSUER_DNS_NAME
 	);
+
+	/**
+	 * @see \CPSignedData
+	 */
+	expectedArguments(
+		\CPSignedData::SignCades(), 1,
+		CADES_BES | CADES_DEFAULT | CADES_T | CADES_X_LONG_TYPE_1 | PKCS7_TYPE
+	);
+
+	expectedArguments(
+		\CPSignedData::SignCades(), 3,
+		ENCODE_ANY | ENCODE_BASE64 | ENCODE_BINARY
+	);
+
+	expectedArguments(
+		\CPSignedData::VerifyCades(), 1,
+		CADES_BES | CADES_DEFAULT | CADES_T | CADES_X_LONG_TYPE_1 | PKCS7_TYPE
+	);
+
+	expectedArguments(
+		\CPSignedData::CoSignCades(), 1,
+		CADES_BES | CADES_DEFAULT | CADES_T | CADES_X_LONG_TYPE_1 | PKCS7_TYPE
+	);
+
+	expectedArguments(
+		\CPSignedData::CoSignCades(), 2,
+		ENCODE_ANY | ENCODE_BASE64 | ENCODE_BINARY
+	);
+
+	expectedArguments(
+		\CPSignedData::SignHash(), 2,
+		CADES_BES | CADES_DEFAULT | CADES_T | CADES_X_LONG_TYPE_1 | PKCS7_TYPE
+	);
+
+	expectedArguments(
+		\CPSignedData::SignHash(), 3,
+		ENCODE_ANY | ENCODE_BASE64 | ENCODE_BINARY
+	);
+
+	expectedArguments(
+		\CPSignedData::CoSignHash(), 2,
+		CADES_BES | CADES_DEFAULT | CADES_T | CADES_X_LONG_TYPE_1 | PKCS7_TYPE
+	);
+
+	expectedArguments(
+		\CPSignedData::CoSignHash(), 3,
+		ENCODE_ANY | ENCODE_BASE64 | ENCODE_BINARY
+	);
+
+	expectedArguments(
+		\CPSignedData::VerifyHash(), 2,
+		CADES_BES | CADES_DEFAULT | CADES_T | CADES_X_LONG_TYPE_1 | PKCS7_TYPE
+	);
 }
