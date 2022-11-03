@@ -218,7 +218,7 @@ class CPCertificates
 	 *
 	 * @param   int  $Index
 	 *
-	 * @return mixed
+	 * @return CPCertificate
 	 */
 	public function Item(int $Index)
 	{
