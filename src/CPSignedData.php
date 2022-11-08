@@ -96,7 +96,7 @@ class CPSignedData
 	 *
 	 * @return string|void
 	 */
-	public function SignCades(\CPSigner $Signer, $CadesType = CADES_DEFAULT, bool $bDetached = false, $EncodingType = ENCODE_BASE64)
+	public function SignCades(\CPSigner $Signer, $CadesType, bool $bDetached, $EncodingType)
 	{
 	}
 
@@ -180,7 +180,7 @@ class CPSignedData
 	 *
 	 * @return string|void
 	 */
-	public function SignHash(\CPHashedData $Hash, \CPSigner $Signer, $CadesType = CADES_DEFAULT, $EncodingType = ENCODE_BASE64)
+	public function SignHash(\CPHashedData $Hash, \CPSigner $Signer, $CadesType, $EncodingType)
 	{
 	}
 
@@ -488,7 +488,7 @@ class CPSignedData
 	 *
 	 * @return void
 	 */
-	public function VerifyCades(string $SignedMessage, $CadesType = CADES_DEFAULT, bool $bDetached = false)
+	public function VerifyCades(string $SignedMessage, $CadesType, bool $bDetached)
 	{
 	}
 
