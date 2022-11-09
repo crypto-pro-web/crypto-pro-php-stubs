@@ -263,7 +263,7 @@ class CPSignedData
 	 *
 	 * @return string|void
 	 */
-	public function CoSignCades(\CPSigner $Signer, $CadesType = CADES_DEFAULT, $EncodingType = ENCODE_BASE64)
+	public function CoSignCades(\CPSigner $Signer, $CadesType, $EncodingType)
 	{
 	}
 
@@ -347,7 +347,7 @@ class CPSignedData
 	 *
 	 * @return string|void
 	 */
-	public function CoSignHash(\CPHashedData $Hash, \CPSigner $Signer, $CadesType = CADES_DEFAULT, $EncodingType = ENCODE_BASE64)
+	public function CoSignHash(\CPSigner $Signer, \CPHashedData $Hash, $CadesType, $EncodingType)
 	{
 	}
 
