@@ -28,7 +28,7 @@
 	"require": {
 		"php": ">7.2 <8.0"
 	},
-	"autoload-dev": {
+	"autoload": {
 		"classmap": [
 			"src/"
 		]
