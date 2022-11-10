@@ -12,6 +12,12 @@
  */
 class CPStore
 {
+	/**
+	 * @throws \Throwable
+	 */
+	public function __construct()
+	{
+	}
 
 	/**
 	 * Добавляет сертификат в открытое хранилище.

@@ -16,9 +16,8 @@
  */
 class CPHashedData
 {
-
 	/**
-	 *
+	 * @throws \Throwable
 	 */
 	public function __construct()
 	{

@@ -29,7 +29,9 @@
  */
 class CPSigner
 {
-
+	/**
+	 * @throws \Throwable
+	 */
 	public function __construct()
 	{
 	}

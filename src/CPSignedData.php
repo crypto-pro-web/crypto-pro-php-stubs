@@ -11,7 +11,9 @@
  */
 class CPSignedData
 {
-
+	/**
+	 * @throws \Throwable
+	 */
 	public function __construct()
 	{
 	}

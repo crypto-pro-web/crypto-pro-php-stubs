@@ -13,6 +13,9 @@
  */
 class CPAttribute
 {
+	/**
+	 * @throws \Throwable
+	 */
 	public function __construct()
 	{
 	}
