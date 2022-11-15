@@ -12,34 +12,44 @@ class Version
 	/**
 	 *
 	 */
-	public function __construct(){}
+	public function __construct()
+	{
+	}
 
 	/**
 	 * Возвращает старший компонент версии.
 	 *
 	 * @return int
 	 */
-	public function get_MajorVersion(){}
+	public function get_MajorVersion()
+	{
+	}
 
 	/**
 	 * Возвращает младший компонент версии.
 	 *
 	 * @return int
 	 */
-	public function get_MinorVersion(){}
+	public function get_MinorVersion()
+	{
+	}
 
 	/**
 	 * Возвращает номер сборки.
 	 *
 	 * @return int
 	 */
-	public function get_BuildVersion(){}
+	public function get_BuildVersion()
+	{
+	}
 
 	/**
 	 * Возвращает строковое представление версии.
 	 *
 	 * @return string
 	 */
-	public function toString(){}
+	public function toString()
+	{
+	}
 
 }
