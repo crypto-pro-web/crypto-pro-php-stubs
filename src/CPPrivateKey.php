@@ -15,4 +15,5 @@ class CPPrivateKey
 	
 	public function get_KeySpec(){}
 	
+	public function set_KeyPin(string $pin){}
 }
