@@ -7,6 +7,6 @@ class CPRawSignature
 	
 	public function VerifyHash(){}
 	
-	public function SignHash(){}
+	public function SignHash(\CPHashedData $hashedData, \CPCertificate $certificate): string {}
 	
 }
